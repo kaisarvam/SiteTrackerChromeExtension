@@ -1,27 +1,34 @@
-# React + TypeScript + Vite
+# My Awesome Chrome Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Overview:**
 
-Currently, two official plugins are available:
+This Chrome extension is built with React, TypeScript, and Vite. It helps you keep track of visited websites and provides a user-friendly interface for managing your browsing history.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Getting Started:**
 
-## Expanding the ESLint configuration
+1. **Install Dependencies:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   - Run `npm install` or `yarn` to install project dependencies.
 
-- Configure the top-level `parserOptions` property like this:
+2. **Build the Extension:**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   - To start using the extension, run `npm run build` or `yarn build`.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Load the Extension in Chrome:**
+
+   - Open your Chrome browser.
+   - Navigate to "chrome://extensions/"
+   - Enable developer mode by toggling the switch in the top-right corner.
+   - Click on "Load unpacked" in the top-left corner.
+   - Select the "dist" folder from this project.
+
+4. **Use the Extension:**
+   - Once loaded, you'll find the extension in your Chrome extensions list.
+   - Enable the extension and pin it to the extension bar for easy access.
+
+**Features:**
+
+- **Visited Sites Tracking:** This extension keeps a list of the websites you visit.
+- **Duplicate Site Detection:** If you visit a site twice, you'll see a red text warning that says "This site is visited already."
+
+- **Remove Sites:** You can easily remove a site from the visited list. This action will remove the red text and consider the site as new.
