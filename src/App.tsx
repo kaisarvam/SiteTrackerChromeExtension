@@ -50,7 +50,16 @@ function App() {
   console.log("visited sites : ", visitedSites);
   return (
     <div>
-      <h1>Visited Sites</h1>
+      <h1
+        style={{
+          color: `${visitedSites.length < 1 ? "red" : ""}`,
+          whiteSpace: "nowrap",
+        }}
+      >
+        {visitedSites.length < 1
+          ? "There is no visited site here !"
+          : "Visited sites"}
+      </h1>
       <div className="list-container">
         {visitedSites.map((site: string, index: number) => {
           return (
