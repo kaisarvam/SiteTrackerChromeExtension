@@ -1,4 +1,4 @@
-# My Awesome Chrome Extension
+# Visited Site Tracker Chrome Extension
 
 **Overview:**
 
